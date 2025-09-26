@@ -1,0 +1,50 @@
+background {
+    monitor =
+    path = ~/.config/hypr/hyprlock/9374610.jpg
+    blur_passes = 3
+    contrast = 0.8916
+    brightness = 0.8172
+    vibrancy = 0.1696
+    vibrancy_darkness = 0.0
+}
+image {
+    monitor = 
+    path = ~/.config/hypr/hyprlock/profile.jpg
+    border_size = 2
+    border_color = rgba(255, 255, 255, 0)
+    size = 160
+    rounding = -1
+    position = 0, 40
+    halign = center
+    valign = center
+}
+input-field {
+    monitor =
+    size = 280, 55
+    outline_thickness = 2
+    dots_size = 0.2
+    dots_spacing = 0.2
+    dots_center = true
+    outer_color = rgba(0, 0, 0, 0)
+    inner_color = rgba(255, 255, 255, 0.1)
+    font_color = rgb(200, 200, 200)
+    fail_color = rgb(204, 34, 34)
+    fade_on_empty = false
+    font_family = SF Pro Display Bold
+    placeholder_text = <i><span foreground="##ffffff99">Enter Password</span></i>
+    hide_input = false
+    position = 0, -210
+    halign = center
+    valign = center
+}
+auth{
+  fingerprint:enabled= true
+}
+#label {
+#    text = cmd[update:0:0] until fprintd-verify -f right-index-finger; do :; done; pkill -USR1 hyprlock
+#}
+general {
+    no_fade_in =false# Smooth fade-in animation
+    grace = 0                 # No grace period
+    disable_loading_bar = false  # Show loading indicator
+}
